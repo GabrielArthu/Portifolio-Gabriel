@@ -1,6 +1,6 @@
 # 🚀 Portfólio Pessoal | Gabriel Arthur
 
-![Project Banner](./icon/android-chrome-512x512.png)
+![Project Banner](./icon/android-chrome-192x192.png)
 > Um portfólio moderno, responsivo e acessível desenvolvido com HTML5 Semântico e CSS3 Puro, focado em performance e design system.
 
 
