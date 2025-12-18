@@ -4,15 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Portfólio de [Seu Nome], Desenvolvedor Front-End especializado em interfaces modernas.">
-    <title>Portfólio</title>
+    <title>Portfólio | Gabriel Arthur</title>
+    <meta name="description" content="Portfólio de Gabriel Arthur, estudante de Engenharia da Computação">
+    <meta name="author" content="Gabriel Arthur">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://media.licdn.com/dms/image/v2/D4D03AQE_FESV8Yv3CQ/profile-displayphoto-shrink_200_200/0/1712181680069?e=1767830400&v=beta&t=rjVZHDoV5U-g8YJA9gi5j_fLra1ARFXV3SOLER-BvsA">
 
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -21,29 +26,31 @@
 
     <header class="header">
         <div class="container header-container">
-            <a href="#" class="logo" aria-label="Página Inicial">Dev<span>Portfolio</span>.</a>
+            <a href="#" class="logo" aria-label="Página Inicial">Profile<span>ALPHA</span>.</a>
 
             <nav class="navbar" aria-label="Navegação Principal">
                 <ul>
-                    <li><a href="#home" class="active" aria-current="page">Home</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
-            </nav>
+                
         </div>
     </header>
 
     <main id="main-content">
+
         <section id="home" class="hero" aria-labelledby="hero-title">
             <div class="container hero-container">
 
                 <div class="hero-text">
                     <span class="greeting fade-up delay-1">Olá, eu sou</span>
-                    <h1 id="hero-title" class="fade-up delay-2">Gabriel Arthur</h1>
+                    <h1 id="hero-title" class="fade-up delay-2">
+                        <span class="text-gradient">Gabriel Arthur</span>
+                    </h1>
                     <p class="fade-up delay-3">
-                        Desenvolvedor Front-End focado em criar experiências digitais
-                        <strong>acessíveis</strong>, <strong>bonitas</strong> e <strong>funcionais</strong>.
+                        Estudante de Engenharia da Computação e Desenvolvedor em transição de carreira. Focado em entregar sistemas estáveis e soluções tecnológicas de alto impacto.
                     </p>
 
                     <div class="hero-actions fade-up delay-4">
@@ -53,119 +60,77 @@
                 </div>
 
                 <div class="hero-img fade-in delay-3">
-                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQE_FESV8Yv3CQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1712181680069?e=1767830400&v=beta&t=rjVZHDoV5U-g8YJA9gi5j_fLra1ARFXV3SOLER-BvsA"
-                        alt="Foto de perfil de Gabriel sorrindo em um escritório" width="400" height="400">
+                    <img src="./assets/profile.png"
+                        alt="Foto de perfil de Gabriel Arthur" width="400" height="400">
                 </div>
 
             </div>
         </section>
 
+        
 
         <section id="projetos" class="projects-section" aria-labelledby="projects-title">
             <div class="container">
-                <h2 id="projects-title" class="section-title fade-up">Meus Projetos</h2>
+                <h2 id="projects-title" class="section-title-left fade-up">Meus Projetos</h2>
 
                 <div class="carousel fade-up delay-2">
+                    
                     <article class="project-card">
                         <div class="card-img">
-                            <img src="https://loremflickr.com/400/250/racing,wheel/all"
-                                alt="GIF do Simulador de Corrida funcionando" loading="lazy">
+                            <img src="assets/agencia.png"
+                                alt="Agencia Rich" loading="lazy">
                             <div class="card-badges">
-                                <span class="badge">C++</span>
-                                <span class="badge">Arduino</span>
-                                <span class="badge">IoT</span>
+                                <span class="badge">React</span>
+                                <span class="badge">TypeScript</span>
+                        
                             </div>
                         </div>
                         <div class="card-content">
-                            <h3>Simulador de Corrida FFB</h3>
-                            <p>Desenvolvimento de driver e hardware para volante com Force Feedback. Utiliza pontes H
-                                para controle de motor e comunicação serial de baixa latência.</p>
-
+                            <h3>AGÊNCIA RICH</h3>
+                            <p>Aplicação em react que simula um site de venda de casas.</p>
                             <div class="card-actions">
-                                <a href="https://github.com/seu-user/repo" target="_blank" class="btn-small btn-code">
-                                    <i class="fab fa-github"></i> Code
-                                </a>
-                                <a href="https://youtube.com/..." target="_blank" class="btn-small btn-demo">
-                                    <i class="fas fa-play"></i> Demo
-                                </a>
+                                <a target="_blank" href="https://github.com/GabrielArthu/Property-Sale.git" class="btn-small btn-code"><i class="fab fa-github"></i> Code</a>
+                                <a href="#" class="btn-small btn-demo"><i class="fas fa-external-link-alt"></i> Visitar</a>
                             </div>
                         </div>
                     </article>
 
                     <article class="project-card">
                         <div class="card-img">
-                            <img src="https://loremflickr.com/400/250/racing,wheel/all"
-                                alt="GIF do Simulador de Corrida funcionando" loading="lazy">
+                            <img src="./assets/teskly.png"
+                                alt="Código Java Spring Boot" loading="lazy">
                             <div class="card-badges">
-                                <span class="badge">C++</span>
-                                <span class="badge">Arduino</span>
-                                <span class="badge">IoT</span>
+                                <span class="badge">React-Native</span>
+                                <span class="badge">TypeScript</span>
+                                
                             </div>
                         </div>
                         <div class="card-content">
-                            <h3>Simulador de Corrida FFB</h3>
-                            <p>Desenvolvimento de driver e hardware para volante com Force Feedback. Utiliza pontes H
-                                para controle de motor e comunicação serial de baixa latência.</p>
-
+                            <h3>TESKLY</h3>
+                            <p>Aplicação mobile em react-native de agendamento e gerenciamento de tarefas.</p>
                             <div class="card-actions">
-                                <a href="https://github.com/seu-user/repo" target="_blank" class="btn-small btn-code">
-                                    <i class="fab fa-github"></i> Code
-                                </a>
-                                <a href="https://youtube.com/..." target="_blank" class="btn-small btn-demo">
-                                    <i class="fas fa-play"></i> Demo
-                                </a>
+                                <a target="_blank" href="https://github.com/GabrielArthu/Teskly.git" class="btn-small btn-code"><i class="fab fa-github"></i> Code</a>
+                                <a href="#" class="btn-small btn-demo"><i class="fas fa-external-link-alt"></i> Visitar</a>
+
                             </div>
                         </div>
                     </article>
 
                     <article class="project-card">
                         <div class="card-img">
-                            <img src="https://loremflickr.com/400/250/racing,wheel/all"
-                                alt="GIF do Simulador de Corrida funcionando" loading="lazy">
+                            <img src="./assets/krai.png"
+                                alt="Interface Web Dashboard" loading="lazy">
                             <div class="card-badges">
-                                <span class="badge">C++</span>
-                                <span class="badge">Arduino</span>
-                                <span class="badge">IoT</span>
+                                <span class="badge">HTML</span>
+                                <span class="badge">CSS</span>
                             </div>
                         </div>
                         <div class="card-content">
-                            <h3>Simulador de Corrida FFB</h3>
-                            <p>Desenvolvimento de driver e hardware para volante com Force Feedback. Utiliza pontes H
-                                para controle de motor e comunicação serial de baixa latência.</p>
-
+                            <h3>KRAI </h3>
+                            <p>Aplicação frontend responsiva utilizando flex box e Media Queries .</p>
                             <div class="card-actions">
-                                <a href="https://github.com/seu-user/repo" target="_blank" class="btn-small btn-code">
-                                    <i class="fab fa-github"></i> Code
-                                </a>
-                                <a href="https://youtube.com/..." target="_blank" class="btn-small btn-demo">
-                                    <i class="fas fa-play"></i> Demo
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="card-img">
-                            <img src="https://loremflickr.com/400/250/racing,wheel/all"
-                                alt="GIF do Simulador de Corrida funcionando" loading="lazy">
-                            <div class="card-badges">
-                                <span class="badge">C++</span>
-                                <span class="badge">Arduino</span>
-                                <span class="badge">IoT</span>
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <h3>Simulador de Corrida FFB</h3>
-                            <p>Desenvolvimento de driver e hardware para volante com Force Feedback. Utiliza pontes H
-                                para controle de motor e comunicação serial de baixa latência.</p>
-
-                            <div class="card-actions">
-                                <a href="https://github.com/seu-user/repo" target="_blank" class="btn-small btn-code">
-                                    <i class="fab fa-github"></i> Code
-                                </a>
-                                <a href="https://youtube.com/..." target="_blank" class="btn-small btn-demo">
-                                    <i class="fas fa-play"></i> Demo
-                                </a>
+                                <a target="_blank" href="https://github.com/GabrielArthu/krai.git" class="btn-small btn-code"><i class="fab fa-github"></i> Code</a>
+                                <a href="#" class="btn-small btn-demo"><i class="fas fa-external-link-alt"></i> Visitar</a>
                             </div>
                         </div>
                     </article>
@@ -174,14 +139,15 @@
                 <p class="scroll-hint">Deslize para ver mais →</p>
             </div>
         </section>
+
         <section id="sobre" class="about-section">
             <div class="container about-container">
 
                 <div class="about-image fade-up">
-                    <img src="https://loremflickr.com/500/600/man,working/all"
-                        alt="Gabriel trabalhando em um projeto de hardware" loading="lazy">
+                    <img src="./assets/aws-certified-cloud-practitioner.png"
+                        alt="Setup de desenvolvimento" loading="lazy">
 
-                    <a href="https://www.credly.com/" target="_blank" class="cert-badge"
+                    <a href="https://www.credly.com/badges/f5c334ad-4dfd-4779-bffa-2e01bff1bee6/public_url" target="_blank" class="cert-badge"
                         aria-label="Ver validação da certificação AWS Cloud Practitioner">
                         <i class="fab fa-aws"></i>
                         <div>
@@ -194,83 +160,64 @@
                 <div class="about-text fade-up delay-2">
                     <h2 class="section-title-left">Sobre Mim</h2>
                     <p>
-                        Olá! Sou estudante do <strong>4º período de Engenharia da Computação</strong> e estou em plena
-                        transição de carreira.
-                        Minha jornada começou no suporte e varejo, onde desenvolvi uma <strong>comunicação
-                            assertiva</strong> e <strong>empatia para resolver problemas reais</strong> — habilidades
-                        que hoje aplico no desenvolvimento de software.
+                        Olá! Sou estudante do <strong>4º período de Engenharia da Computação</strong> na Una.
+                        Minha trajetória profissional começou no varejo e suporte técnico, onde aprimorei soft skills cruciais como 
+                        <strong>comunicação</strong> e <strong>resolução de problemas</strong>.
                     </p>
                     <p>
-                        Sou apaixonado por entender como as coisas funcionam "por baixo do capô", do <em>hardware</em>
-                        ao <em>cloud</em>.
-                        Atualmente, meu foco é unir a robustez do <strong>Java</strong> com a agilidade da
-                        <strong>AWS</strong> para criar soluções escaláveis.
+                        Hoje, aplico essa bagagem no desenvolvimento de software. Sem deixar de lado minha paixão por hardware e simuladores.
                     </p>
 
                     <div class="skills-grid">
                         <div class="skill-card">
                             <i class="fas fa-server skill-icon"></i>
                             <h4>Backend</h4>
-                            <p>Java, Spring Boot, API REST, MySQL</p>
+                            <p>Java, Spring Boot, MySQL, H2</p>
                         </div>
                         <div class="skill-card">
                             <i class="fas fa-cloud skill-icon"></i>
                             <h4>Cloud & DevOps</h4>
-                            <p>AWS (Certified), Docker, Git, Linux</p>
+                            <p>AWS , Git</p>
                         </div>
                         <div class="skill-card">
                             <i class="fas fa-code skill-icon"></i>
                             <h4>Frontend</h4>
-                            <p>HTML5, CSS3, JavaScript, React</p>
+                            <p>React, HTML5, CSS3, JS</p>
                         </div>
                         <div class="skill-card">
                             <i class="fas fa-microchip skill-icon"></i>
                             <h4>Hardware</h4>
-                            <p>C++, Arduino, IoT, Eletrônica</p>
+                            <p> Arduino, IoT</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-
-
-
-
-
-
     </main>
 
-
-
-
-
-
-    <footer class="footer">
+    <footer class="footer" id="contato">
         <div class="container footer-container">
-
+            
             <div class="social-links">
-                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                    <i class="fab fa-facebook-square"></i>
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <a href="https://linkedin.com/in/gabrielarthurdev" target="_blank" aria-label="LinkedIn">
                     <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/GabrielArthu/" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:gabrielarthur11333@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
                 </a>
             </div>
 
-            <p class="copyright">Copyright ©2025 All rights reserved</p>
+            <p class="copyright"> 2025 Gabriel Arthur</p>
         </div>
+
         <button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo da página">
             <i class="fas fa-arrow-up"></i>
         </button>
     </footer>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
